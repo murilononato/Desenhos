@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squirtle</title>
+</head>
+
+<style type="text/css">
+
+    body{
+        text-align: center;
+    }
+
+    .p,.w,.a,.e,.m,.u,.h,.t{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-top: -4px;
+    }
+
+    .t{
+        background-color: rgb(255, 218, 7);
+    }
+
+    .h{
+        background-color: lightgray;
+    }
+
+    .u{
+        background-color: rgb(119, 69, 36)
+    }
+    
+    .m{
+        background-color: rgb(74, 45, 23);
+    }
+
+    .e{
+        background-color: rgb(27, 145, 204);
+    }
+
+    .a{
+        background-color: rgb(20, 192, 255);
+    }
+    .p{
+        background-color:black;
+    }
+
+</style>
+
+<body>
+
+    <h1>SQUIRTLE</h1><br>
+
+    <div id="pokemon">
+       wwwppppwwwwwwwwwppppwwx
+       wwpaaaeppwwwwwwpaaaapwx
+       wpaaaaaaeppwwwppaaaeepx
+       wpaaaaaaapmppwpaaepeepx
+       pmaaaaaaaemumpeaepeeepx
+       paaaawpaaehuumpeepeepwx
+       peaaapmaeewuuupeppppwwx
+       wpeeapmeeepwwuuppwwwwwx
+       wwppeeeeppaawuupwwwwwwx
+       wwpappppaaaewuupwwwwwwx
+       wwwppttpaaepwuupwwwwwwx 
+       wwwwwpttpppphuupwwwwwwx
+       wwwwpepmtttmphpwwwwwwwx
+       wwwwwppppmmaphpwwwwwwwx
+       wwwwwwwwpppappwwwwwwwwx
+       wwwwwwwwwpeeepwwwwwwwwx
+       wwwwwwwwwwpppwwwwwwwwwx 
+    </div>    
+
+        <script type="text/javascript">
+            let pokemon = document.getElementById("pokemon");
+            let str = pokemon.innerHTML;
+            str = str.replace(/a/g, "<div class='a'></div>");
+            str = str.replace(/w/g, "<div class='w'></div>");
+            str = str.replace(/h/g, "<div class='h'></div>");
+            str = str.replace(/u/g, "<div class='u'></div>");
+            str = str.replace(/p/g, "<div class='p'></div>");
+            str = str.replace(/e/g, "<div class='e'></div>");
+            str = str.replace(/m/g, "<div class='m'></div>");
+            str = str.replace(/t/g, "<div class='t'></div>");
+            str = str.replace(/x/g, "<br>");
+            pokemon.innerHTML = str;
+        </script>
+
+
+    </body>
+</html>
