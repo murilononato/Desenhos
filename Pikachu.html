@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikachu</title>
+
+    <style type="text/css">
+        body{
+            text-align: center;
+        }
+        #pokemon{
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>PIKACHU</h1>
+    <canvas id="pokemon" width="380" height="400">
+    </canvas>
+
+    <script type="text/javascript">
+        var canvas=document.getElementById("pokemon")
+        var pixel=canvas.getContext('2d')
+
+        pixel.fillStyle = "#000000"
+        // x , y , width, height
+
+        pixel.fillRect(120,0,40,20) 
+        pixel.fillRect(320,0,20,20) 
+        pixel.fillRect(100,20,60,20) 
+        pixel.fillRect(300,20,20,20) 
+        pixel.fillRect(340,20,20,20) 
+        pixel.fillRect(100,40,20,20)
+        pixel.fillRect(140,40,20,20) 
+        pixel.fillRect(280,40,20,20) 
+        pixel.fillRect(360,40,20,40)
+        pixel.fillRect(80,60,20,40)
+        pixel.fillRect(140,60,20,20) 
+        pixel.fillRect(220,60,60,20)
+
+
+        pixel.fillStyle = "#ffc13c"
+        pixel.fillRect(320,20,20,20)
+        pixel.fillRect(120,40,20,20)
+        pixel.fillRect(300,40,60,20)
+        pixel.fillRect(100,60,40,20)
+        pixel.fillRect(280,60,80,20)
+
+
+
+    </script>
+</body>
+
+
+</html>
